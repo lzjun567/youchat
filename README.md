@@ -19,7 +19,7 @@
 
 只要在界面右侧配置好你的chatgpt key 就可以连上chatgpt与机器人聊天，这个key 是怎么来的呢？
 
-在openai官方登录后访问 https://platform.openai.com/account/api-keys，可以申请key，以sk开头。如果你的账号是从别的渠道购买的，通常也会带一个key
+在openai官方登录后访问 https://platform.openai.com/account/api-keys ，可以申请key，以sk开头。如果你的账号是从别的渠道购买的，通常也会带一个key
 
 申请完key之后，我们唯一要做的一件事就是配置Nginx，不知道Nginx是什么的同学可自行搜下，简单来讲就是一个提供Web服务的服务器以及反向代理工具，我们只需要把那个html文件配置在nginx，程序就能跑起来了。
 
