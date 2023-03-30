@@ -42,8 +42,8 @@ location ^~ /chatgpt/v1 {
 
 }
 location /chatgpt {
-	alias /data/server/chatgpt_gzh/application/templates;
-	index youchat.html;
+	alias /usr/share/nginx/html/;  # 实际地址看你具体把html文件放在哪里
+ 	index youchat.html;
 }
 ```
 
@@ -56,6 +56,10 @@ nginx -s reload
 
 
 大功告成！
+
+最后访问：
+
+> http://127.0.0.1/chatgpt
 
 
 1、对外暴露自己的key存在不安全因素，如果不是你自己的搭建的服务请谨慎使用
